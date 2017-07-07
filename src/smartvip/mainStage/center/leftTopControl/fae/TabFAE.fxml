@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Tab fx:id="tabFAE" text="%TabFAE" closable="false"    fx:controller="smartvip.mainStage.center.leftTopControl.fae.TabFAEController"  xmlns:fx="http://javafx.com/fxml/1">
+    <BorderPane >
+        <top><Label fx:id="leftTip" text="请先选择设备类别及型号" style="-fx-padding:10 10 10 10; -fx-font-family: 'Segoe UI Semibold';" /></top>
+        <center>
+            <fx:define><ToggleGroup fx:id="faeSeleckGroup" /></fx:define>
+            <GridPane fx:id="gridPaneFAEOption" style="-fx-padding: 0 10 0 10;" alignment="TOP_CENTER" hgap="5" vgap="6"  gridLinesVisible="false" /> 
+        </center>
+        <bottom>
+            <VBox >
+            <HBox spacing="10" style="-fx-padding:10 10 10 10;"  alignment="CENTER" >
+                <Button fx:id="btnReadParams" text="串口读参数" prefWidth="100" prefHeight="30" onMouseClicked="#onButtonMouseClicked" />
+                <Button fx:id="btnSetUSB" text=" U盘设置 " prefWidth="100" prefHeight="30" onMouseClicked="#onButtonMouseClicked" /> 
+                <Button fx:id="btnSetRS232" text=" 串口设置 " prefWidth="100" prefHeight="30" onMouseClicked="#onButtonMouseClicked" />  
+            </HBox>      
+            
+            <HBox spacing="10" style="-fx-padding:0 10 10 10;"  alignment="CENTER" >
+                <Button fx:id="btnSetWIFI" text=" WIFI设置 " prefWidth="100" prefHeight="30" onMouseClicked="#onButtonMouseClicked" />
+                <Button fx:id="btnSetCAN" text=" CAN设置 " prefWidth="100" prefHeight="30" onMouseClicked="#onButtonMouseClicked" /> 
+                <Button fx:id="btnSetSMS" text=" 短信设置 " prefWidth="100" prefHeight="30" onMouseClicked="#onButtonMouseClicked" />  
+            </HBox> 
+            </VBox>                     
+        </bottom>
+    </BorderPane>
+</Tab> 
+ 

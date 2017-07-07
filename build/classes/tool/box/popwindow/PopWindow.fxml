@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bp"  fx:controller="tool.box.popwindow.PopWindowController"  xmlns:fx="http://javafx.com/fxml/1">
+   
+    <top>
+        <HBox alignment="BASELINE_LEFT" spacing="7" style="-fx-padding:3 5 3 5; " >
+            <Label fx:id="clear" text="[ 清 空 ]" onMouseClicked="#onMouseClicked4clear"/>
+            <StackPane alignment="BASELINE_RIGHT" HBox.hgrow="ALWAYS"  >
+                <Label fx:id="save"  style="-fx-padding:4 3 3 3; " text=""  onMouseClicked="#onMouseClicked4save" />
+            </StackPane>
+        </HBox>
+    </top>
+    <center>
+        <TextArea fx:id="logArea" wrapText="true" promptText="系统运行过程日志提示" editable="true" />
+    </center>
+    
+</BorderPane> 
+ 

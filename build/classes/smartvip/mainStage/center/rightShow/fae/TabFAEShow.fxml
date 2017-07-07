@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Tab fx:id="tabFAEShow" text="%TabFAE" closable="false" fx:controller="smartvip.mainStage.center.rightShow.fae.TabFAEShowController"  xmlns:fx="http://javafx.com/fxml/1">
+    <content > 
+        <ScrollPane fx:id="scrollPane">
+            <GridPane fx:id="gridPane" gridLinesVisible="false" ></GridPane>
+        </ScrollPane>
+    </content>
+</Tab> 
+ 

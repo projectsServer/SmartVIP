@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Tab fx:id="tabRDShow" text="%TabRD" closable="false" fx:controller="smartvip.mainStage.center.rightShow.rd.TabRDShowController"  xmlns:fx="http://javafx.com/fxml/1">
+    <TabPane  fx:id="tabRDShowPane" side="TOP" tabMinWidth="200"  >
+        <fx:include fx:id="tabRDShowSteer" source="/smartvip/mainStage/center/rightShow/rd/steer/TabRDShowSteer.fxml" />
+        <fx:include fx:id="tabRDShowDIY" source="/smartvip/mainStage/center/rightShow/rd/diy/TabRDShowDIY.fxml" />
+        <fx:include fx:id="tabRDShowScript" source="/smartvip/mainStage/center/rightShow/rd/script/TabRDShowScript.fxml" />
+    </TabPane>    
+</Tab> 
+ 

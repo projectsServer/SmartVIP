@@ -1,0 +1,97 @@
+.menu-bar{
+    -fx-use-system-menu-bar:true;
+    -fx-border:none;
+    -fx-background-color:#fbfbfb;
+    -fx-cursor:hand;
+}
+.menu-item{
+    -fx-pref-width:160px;
+    -fx-background-insets:0px 0px 0px 0px;
+    -fx-background-color:#fbfbfb;
+    -fx-padding:5px 0px 5px 15px;
+}
+.menu-item:hover{
+    -fx-background-color:#c2c2c2;
+}
+.context-menu {
+    -fx-padding: 0;
+}
+
+#menuBar {
+    -fx-padding:3 3 3 3; 
+}
+
+#sysFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_system.png"); 
+}
+#printShowFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_find.png"); 
+}
+#printFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_printer_1.png"); 
+}
+#exitFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_close.png"); 
+}
+
+#setFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_tool.png"); 
+}
+#closeSerial > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_port_close.png"); 
+}
+#openSerial > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_port.png"); 
+}
+#setSerial > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_port_option.png"); 
+}
+#setAddFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_database_3.png"); 
+}
+#pwdFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_hammer.png"); 
+}
+
+#viewFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_picker.png"); 
+}
+#sysLogFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_task.png"); 
+}
+#logFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_speaker_1.png"); 
+}
+
+#statisticFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_chart.png"); 
+}
+#doingStatFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_schedule.png"); 
+}
+#doneStatFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_flag.png"); 
+}
+
+#dataFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_database_1.png"); 
+}
+#newDataFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_dir.png"); 
+}
+#uplaodFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_upload.png"); 
+}
+
+#helpFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_bulb_1.png"); 
+}
+#noteFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_file.png"); 
+}
+#feedbackFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_talk.png"); 
+}
+#aboutFun > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_about.png"); 
+}

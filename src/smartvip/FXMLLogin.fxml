@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-padding:20 0 0 0" prefHeight="0" prefWidth="0" fx:controller="smartvip.FXMLLoginController">
+    <center>
+        <GridPane fx:id="gridPane" alignment="CENTER" hgap="10" vgap="15"  gridLinesVisible="false" onKeyPressed="#onLoginAction"  >
+            <children>
+                <Label fx:id="head" style="-fx-cursor:hand" prefWidth="128" prefHeight="128"  GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.rowSpan="4"  GridPane.columnSpan="1" onMouseClicked="#onMouseClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited"/>
+                
+                <Label style="-fx-graphic:url(/tool/box/raw/images/person.png); " alignment="CENTER_RIGHT" prefWidth="40" prefHeight="20" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <TextField fx:id="name" style="-fx-font-size: 10pt;" focusTraversable="false"  promptText="%PromptMail"  GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="200" prefHeight="20" alignment="CENTER" />
+                <Label style="-fx-graphic:url(/tool/box/raw/images/password.png);" alignment="CENTER_RIGHT" prefWidth="40" prefHeight="20"  GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <PasswordField fx:id="password" style="-fx-font-size: 10pt;" focusTraversable="false"  promptText="%PromptPwd" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="200" prefHeight="20" alignment="CENTER"/>
+                
+                <HBox style="-fx-padding: 0 0 0 40;" spacing="50" alignment="CENTER"  GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.rowSpan="1"  GridPane.columnSpan="2" >
+                    <fx:define><ToggleGroup fx:id="toggleGroup"/></fx:define>
+                    <children>
+                        <RadioButton fx:id="rememberMe" text="%RememberMe" toggleGroup="$toggleGroup" focusTraversable="false"/>
+                        <RadioButton fx:id="forgotMe" text="%ForgotMe" toggleGroup="$toggleGroup" focusTraversable="false" />
+                    </children>
+                </HBox>
+                
+                <VBox alignment="CENTER_RIGHT"  GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.rowSpan="1"  GridPane.columnSpan="2" >
+                    <Button fx:id="button" text=" 登   录 " style="-fx-font-size: 10pt;" prefWidth="200" prefHeight="20"  onAction="#onLoginAction"  />
+                    <Label fx:id="tip" style="-fx-padding: 5 0 0 0;" />
+                </VBox>
+            </children>
+        </GridPane>
+    </center>
+    
+    <bottom>
+        <HBox spacing="10" style="-fx-padding:0 5 5 5;"  >
+            <Label fx:id="option" onMouseClicked="#onMouseClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited">
+                <contextMenu>
+                    <ContextMenu fx:id="contextMenu4option"> <!-- 有CSS控制外观 --> 
+                        <items>
+                            <MenuItem fx:id="newUser" text=" 用户注册 " onAction="#onAction4optionContextMenu"  />
+                            <MenuItem fx:id="changePW" text=" 更改密码 " onAction="#onAction4optionContextMenu"  />
+                            <MenuItem fx:id="systemSetting" text=" 系统设置 " onAction="#onAction4optionContextMenu"  />
+                            <MenuItem fx:id="systemReset" text=" 恢复初始 " onAction="#onAction4optionContextMenu"  />
+                            <MenuItem fx:id="declear" text=" 免责声明 " onAction="#onAction4optionContextMenu"  />
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+            </Label> 
+            <Label fx:id="authority" text="%CopyRight"  prefWidth="420" prefHeight="20" alignment="CENTER"></Label> 
+        </HBox> 
+    </bottom>
+        
+        
+
+</BorderPane>

@@ -1,0 +1,48 @@
+.label {
+    -fx-font-size: 14px;
+    -fx-padding: 3 3 3 0;
+    -fx-font-weight: normal;
+    -fx-text-fill: #122e29;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#title1,#title2 {
+    -fx-font-size: 16px;
+}
+#downSMSClient {
+    -fx-underline:true;
+    -fx-graphic: url("/tool/box/raw/images/_16_download.png"); 
+    -fx-content-display:right;
+    -fx-cursor:hand;    
+}
+#tfCode {
+    -fx-font-size: 14px;
+}
+
+
+.combo-box-base {
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Segoe UI Semibold";    
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#61a2b1, #285171);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 10pt;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-weight: bold; 
+    -fx-pref-width: 150;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#285171, #61a2b1);
+    -fx-cursor:hand;
+}
+.button:pressed {
+    -fx-background-color:#285171;
+}

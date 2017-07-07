@@ -1,0 +1,123 @@
+root { 
+    display: block;
+    cell-color: white ;
+    cell-border-color: black ;    
+}
+
+.table-column {
+  -fx-alignment: CENTER;
+}
+.table-row-cell {
+    -fx-cell-size: 30px;
+}
+.table-view .table-cell{
+    -fx-font-size:14px;
+}
+
+.split-pane > .split-pane-divider {  
+    -fx-padding: 0 0.1em 0 0.1em;  
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button {
+    -fx-background-color: linear-gradient(#61a2b1, #285171);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-weight: bold;    
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#285171, #61a2b1);
+    -fx-cursor:hand;
+}
+.button:pressed {
+    -fx-background-color:#285171;
+}
+
+.radio-button {
+    -fx-cursor:hand;
+}
+
+.tab {
+    -fx-background-color: #fbfbfb;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2;
+}
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+     -fx-border-width: 0 0 0 0;
+}
+.tab:selected {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-background-color: #DCDCDC;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: #c2c2c2 #c2c2c2 #285171 #c2c2c2
+}
+.tab-pane *.tab-header-background {
+    -fx-background-color: #fbfbfb;
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2
+}
+.tab-label {
+    -fx-cursor:hand;
+}
+.tab:hover{
+    -fx-background-color:#DCDCDC;
+}
+
+#tabMaker .tab-label  {
+    -fx-graphic: url("/tool/box/raw/images/_16_make.png"); 
+    -fx-graphic-text-gap: 8;
+}
+#tabMakerShow .tab-label  {
+    -fx-graphic: url("/tool/box/raw/images/_16_make.png"); 
+    -fx-graphic-text-gap: 8;
+}
+#tabFAE .tab-label  {
+    -fx-graphic: url("/tool/box/raw/images/_16_set.png");
+    -fx-graphic-text-gap: 8;
+}
+#tabFAEShow .tab-label  {
+    -fx-graphic: url("/tool/box/raw/images/_16_set.png");
+    -fx-graphic-text-gap: 8;
+}
+#tabRD .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_V.png"); 
+    -fx-graphic-text-gap: 8;
+}
+#tabRDShow .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_V.png"); 
+    -fx-graphic-text-gap: 8;
+}
+#tabShow .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_cross.png");
+    -fx-graphic-text-gap: 8;
+}
+#tabShowShow .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_cross.png");
+    -fx-graphic-text-gap: 8;
+}
+#tabRDShowSteer .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_dashboard.png");
+    -fx-graphic-text-gap: 8;
+}
+#tabRDShowDIY .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_airplane.png");
+    -fx-graphic-text-gap: 8;
+}
+#tabRDShowScript .tab-label {
+    -fx-graphic: url("/tool/box/raw/images/_16_setup.png");
+    -fx-graphic-text-gap: 8;
+}
+

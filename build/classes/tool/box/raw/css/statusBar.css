@@ -1,0 +1,5 @@
+#statusBar {
+    -fx-padding:5 15 5 15; 
+    -fx-border-color:grey; 
+    -fx-border-width: 1;
+}

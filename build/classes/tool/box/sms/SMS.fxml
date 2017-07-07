@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane  xmlns:fx="http://javafx.com/fxml/1" fx:controller="tool.box.sms.SMSController"  style="-fx-padding:30 40 20 40" >
+    <top></top>
+    <center>
+        <VBox >
+            <BorderPane> 
+                <top></top>
+                <center>
+                    <VBox >
+                        <Label fx:id="title1" text="一、创建短信文件方式"/>
+                        <HBox ><Label text="  第1步："/><Label fx:id="downSMSClient" text="下载绿色免安装短信发送客户端" onMouseClicked="#onMouseClicked"  /></HBox>
+                        <Label text="  第2步：创建短信文件"/>
+                        <Label text="  第3步：打开创建的短信文件，并复制全部内容"/>
+                        <Label text="  第4步：打开客户端并登录"/>
+                        <Label text="  第5步：粘贴短信文件内容到客户端"/> 
+                        <HBox ><Label text="  第6步：填写设置状态回执手机号码："/><TextField fx:id="tfResCode" promptText="11位手机号码" alignment="CENTER"  /></HBox>
+              
+                    </VBox>
+                </center>
+                <bottom >
+                    <HBox alignment="CENTER" style="-fx-padding:20 10 10 10" spacing="20"  >
+                        <Button fx:id="btnFile" text=" 创建短信文件 " onMouseClicked="#onMouseClicked"  ></Button>
+                    </HBox>          
+                </bottom>            
+            </BorderPane>
+
+            <Separator style="-fx-padding:10 0 10 0; "/>
+
+            <BorderPane> 
+                <top></top>
+                <center>
+                    <VBox >
+                        <Label fx:id="title2" text="二、短信方式"/>
+                        <HBox ><Label text="  第1步：填写手机号码："/><TextField fx:id="tfCode" promptText="11位手机号码" alignment="CENTER"  /></HBox>
+                        <Label text="  第2步：最多支持100个手机号码群发"/>
+                        <Label text="  第3步：群发多个手机号码之间用逗号分隔"/>
+                    </VBox>
+                </center>
+                <bottom >
+                    <HBox alignment="CENTER" style="-fx-padding:20 10 10 10" spacing="20"  >
+                        <Button fx:id="btnSMS" text=" 发送短信 " onMouseClicked="#onMouseClicked"  ></Button>
+                    </HBox>          
+                </bottom>            
+            </BorderPane>  
+        </VBox>    
+    </center>
+    <bottom></bottom>
+</BorderPane> 
+ 

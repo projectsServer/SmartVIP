@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="tabRDShowSteerAnalog" fx:controller="smartvip.mainStage.center.rightShow.rd.TabRDShowController"  xmlns:fx="http://javafx.com/fxml/1">
+    <top><Label text="模拟信号" style="-fx-font-size: 11pt; -fx-padding:10; -fx-font-family: 'Segoe UI Semibold' " /></top>
+    <center>
+
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="50" >
+            <fx:define><ToggleGroup fx:id="toggleGroup"/></fx:define>
+            <RadioButton text="响应模式" toggleGroup="$toggleGroup" /> 
+            <RadioButton text="触发模式" toggleGroup="$toggleGroup" />
+        </HBox>                
+    </bottom>
+</BorderPane> 

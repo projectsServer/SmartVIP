@@ -1,0 +1,83 @@
+.label {
+   -fx-font-family: "Segoe UI Semibold";
+}
+
+.list-view {
+    -fx-border-width: 0px; 
+    -fx-padding: 0px;
+}
+
+.split-pane  {
+    -fx-background-color: transparent;
+}
+.split-pane-divider {
+    -fx-border-width: 0;
+}
+
+.table-view {  
+    -fx-border-color: white;
+} 
+.table-view .table-row-cell .table-cell {  
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 13px;
+} 
+.table-cell {  
+    -fx-padding: 10;
+    -fx-text-alignment: center;
+    /*-fx-border-color: red;*/
+} 
+
+/*.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 50;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .table-view .filler {
+    -fx-size: 13;
+    -fx-border-width: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+*/
+
+
+#designTabPage {
+    -fx-background-color: white;
+}
+
+#designContentTitle {
+   -fx-font-size: 22px;
+   -fx-padding: 10 0 5 0;
+   -fx-text-alignment: center;
+}
+
+#designToolbox {
+   -fx-font-size: 11px;
+   -fx-padding: 3 20 3 10;
+}
+
+#designContentSubject {
+   -fx-font-size: 16px;
+   -fx-padding: 5 0 10 0;    
+}
+

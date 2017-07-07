@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Tab fx:id="tabRDShowSteer" text="%TabRDSteer" closable="false" fx:controller="smartvip.mainStage.center.rightShow.rd.TabRDShowController"  xmlns:fx="http://javafx.com/fxml/1">
+    <VBox>
+        <fx:include fx:id="tabRDShowSteerOnoff" source="/smartvip/mainStage/center/rightShow/rd/steer/TabRDShowSteerOnoff.fxml" />
+        <Separator style="-fx-padding:10 0 0 0; "/>
+        <fx:include fx:id="tabRDShowSteerAnalog" source="/smartvip/mainStage/center/rightShow/rd/steer/TabRDShowSteerAnalog.fxml" />
+        <Separator style="-fx-padding:10 0 0 0; "/>
+        <fx:include fx:id="tabRDShowSteerPulse" source="/smartvip/mainStage/center/rightShow/rd/steer/TabRDShowSteerPulse.fxml" />
+        <Separator style="-fx-padding:10 0 0 0; "/>
+        <fx:include fx:id="tabRDShowSteerFun" source="/smartvip/mainStage/center/rightShow/rd/steer/TabRDShowSteerFun.fxml" />
+        <Separator style="-fx-padding:10 0 0 0; "/>
+    </VBox>
+</Tab> 
+ 

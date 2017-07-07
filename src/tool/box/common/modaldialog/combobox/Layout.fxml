@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane  fx:controller="tool.box.common.modaldialog.combobox.LayoutController"  xmlns:fx="http://javafx.com/fxml/1" style="-fx-padding:10 20 10 20" >
+    <top>
+        <Label fx:id="tipTop" text="%TipSelect" style="-fx-padding:10 0 10 0" />
+    </top>
+    <center>
+        <BorderPane >
+            <center><VBox fx:id="centerArea" spacing="20"></VBox></center>
+            <bottom><Label fx:id="tipBottom" text="" style="-fx-padding:10 0 0 0; -fx-text-fill: #285171;" /></bottom>
+        </BorderPane>
+    </center>
+    <bottom >
+        <HBox alignment="CENTER" style="-fx-padding:0 10 10 10" spacing="20"  >
+            <Button fx:id="yesBtn" text=" 确 定 " onMouseClicked="#onMouseClicked"  ></Button>
+            <Button fx:id="noBtn" text=" 取 消 " onMouseClicked="#onMouseClicked" ></Button>
+        </HBox>          
+    </bottom>
+</BorderPane> 
+ 

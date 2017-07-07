@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Tab fx:id="tabMaker" text="%TabMaker" closable="false" fx:controller="smartvip.mainStage.center.leftTopControl.maker.TabMakerController"  xmlns:fx="http://javafx.com/fxml/1">
+    <!--    <stylesheets> <URL value="@/tool/box/raw/css/statusBar.css" /> </stylesheets>  -->
+    <content> 
+        <GridPane  style="-fx-padding: 20 5 10 5;" alignment="TOP_CENTER" hgap="5" vgap="6"  gridLinesVisible="false" > 
+            <Label fx:id="fileChooseTip" style="-fx-font-size: 11pt; -fx-graphic:url(/tool/box/raw/images/_16_dir.png); -fx-cursor:hand; " text="%TipPath" graphicTextGap="5"  GridPane.rowIndex="0" GridPane.columnIndex="0" onMouseClicked="#onMouseClicked"/>
+            <Label fx:id="fileChoose" style="-fx-font-size: 11pt; -fx-cursor:hand" text="%PromptPath" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.columnSpan="5" alignment="CENTER_LEFT" onMouseClicked="#onMouseClicked"/>
+
+            <Separator GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="6" /> 
+
+            <Label fx:id="deviceTypeTip" style="-fx-font-size: 11pt; -fx-graphic:url(/tool/box/raw/images/_16_type.png); " text="%TipDeviceType" graphicTextGap="5"  GridPane.rowIndex="2" GridPane.columnIndex="0" onMouseClicked="#onMouseClicked"/>
+            <Label fx:id="deviceType" style="-fx-font-size: 11pt;" text="--"  GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="5" alignment="CENTER_LEFT" onMouseClicked="#onMouseClicked"/>
+
+            <Separator GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="6" /> 
+
+            <Label fx:id="makerStepTip" style="-fx-font-size: 11pt;-fx-graphic:url(/tool/box/raw/images/_16_step.png);" text="%TipMakerStep" graphicTextGap="5"  GridPane.rowIndex="4" GridPane.columnIndex="0" onMouseClicked="#onMouseClicked"/>
+            <Label fx:id="makerStep" style="-fx-font-size: 11pt;" text="--"  GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.columnSpan="5" alignment="CENTER_LEFT" onMouseClicked="#onMouseClicked"/>
+
+            <Separator GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="6" />
+
+            <Label fx:id="validRawTip" style="-fx-font-size: 11pt;-fx-graphic:url(/tool/box/raw/images/_16_refresh_1.png);" text="%TipValidRaw" graphicTextGap="5"  GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.rowSpan="2" onMouseClicked="#onMouseClicked"/>
+            <Label fx:id="used" style="-fx-font-size: 11pt;" minWidth="65" prefWidth="65" maxWidth="65" text="0" GridPane.rowIndex="6" GridPane.columnIndex="1" alignment="CENTER" onMouseClicked="#onMouseClicked"/>
+            <Label text="+" style="-fx-font-size: 11pt;" GridPane.rowIndex="6" GridPane.columnIndex="2" alignment="CENTER" onMouseClicked="#onMouseClicked"/>
+            <Label fx:id="noUse" style="-fx-font-size: 11pt;" minWidth="65" prefWidth="65" maxWidth="65" text="0"  GridPane.rowIndex="6" GridPane.columnIndex="3" alignment="CENTER" onMouseClicked="#onMouseClicked"/>
+            <Label text="=" style="-fx-font-size: 11pt;" GridPane.rowIndex="6" GridPane.columnIndex="4" alignment="CENTER" onMouseClicked="#onMouseClicked"/>
+            <Label fx:id="total" style="-fx-font-size: 11pt;" minWidth="65" prefWidth="65" maxWidth="65" text="0" GridPane.rowIndex="6" GridPane.columnIndex="5" alignment="CENTER" onMouseClicked="#onMouseClicked"/>
+            <Label text="已用" style="-fx-font-size: 11pt;" minWidth="65" prefWidth="65" maxWidth="65" GridPane.rowIndex="7" GridPane.columnIndex="1" alignment="CENTER" />
+            <Label text="可用" style="-fx-font-size: 11pt;" minWidth="65" prefWidth="65" maxWidth="65" GridPane.rowIndex="7" GridPane.columnIndex="3" alignment="CENTER" />
+            <Label text="总数" style="-fx-font-size: 11pt;"  minWidth="65" prefWidth="65" maxWidth="65" GridPane.rowIndex="7" GridPane.columnIndex="5" alignment="CENTER" />
+
+            <Separator GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="6" />
+
+            <VBox spacing="10"  alignment="CENTER"  GridPane.rowIndex="12" GridPane.columnIndex="0" GridPane.columnSpan="6" >
+                <Button fx:id="btnDoOnce" disable="true"  text="执行一次" prefWidth="150" prefHeight="35" onAction="#onDoOnceClicked" />  
+                <CheckBox fx:id="cbDoOnce" disable="true" selected="false" text="快速执行"/>
+            </VBox>     
+
+            <HBox spacing="10" alignment="CENTER"  GridPane.rowIndex="14" GridPane.columnIndex="0" GridPane.columnSpan="6" >
+                <Label text="---------- END ----------"   />  
+            </HBox>    
+        </GridPane>
+    </content>
+</Tab>

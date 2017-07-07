@@ -1,0 +1,41 @@
+.label {
+   -fx-font-family: "Segoe UI Semibold";
+}
+
+#notifyTabPage {
+    -fx-background-color: white;
+}
+
+.text-area {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#notifyContentTitle {
+   -fx-font-size: 26px;
+}
+
+#notifyContentAuthor {
+   -fx-font-size: 12px;
+   -fx-text-fill: #2F4F4F;
+}
+
+#notifyContentDate {
+   -fx-font-size: 12px;
+   -fx-text-fill: #2F4F4F;
+}
+
+#notifyContentContent {
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+    -fx-text-fill: black;
+}

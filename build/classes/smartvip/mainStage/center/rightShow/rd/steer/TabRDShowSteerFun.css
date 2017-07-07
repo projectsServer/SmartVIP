@@ -1,0 +1,193 @@
+.label {
+    -fx-font-size: 14px;
+    -fx-padding: 3 3 3 0;
+    -fx-font-weight: normal;
+    -fx-text-fill: #122e29;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#steer_ok,#steer_up,#steer_right,#steer_down,#steer_left,#steer_M,#steer_handon,#steer_handup,#steer_navi,#steer_OFF,#steer_RES,#steer_add,#steer_reduce,#steer_LIM {
+     -fx-cursor:hand;
+}
+
+#steer_ok {
+    -fx-graphic:url(/tool/box/raw/images/steer_ok.png);
+}
+#steer_ok:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_ok_on.png);
+}
+#steer_ok:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_ok.png);
+}
+
+
+#steer_up {
+    -fx-graphic:url(/tool/box/raw/images/steer_up.png);
+}
+#steer_up:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_up_on.png);
+}
+#steer_up:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_up.png);
+}
+
+#steer_right {
+    -fx-graphic:url(/tool/box/raw/images/steer_right.png);
+}
+#steer_right:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_right_on.png);
+}
+#steer_right:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_right.png);
+}
+
+#steer_down {
+    -fx-graphic:url(/tool/box/raw/images/steer_down.png);
+}
+#steer_down:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_down_on.png);
+}
+#steer_down:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_down.png);
+}
+
+#steer_left {
+    -fx-graphic:url(/tool/box/raw/images/steer_left.png);
+}
+#steer_left:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_left_on.png);
+}
+#steer_left:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_left.png);
+}
+
+#steer_M {
+    -fx-graphic:url(/tool/box/raw/images/steer_M.png);
+}
+#steer_M:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_M_on.png);
+}
+#steer_M:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_M.png);
+}
+
+
+#steer_handon {
+    -fx-graphic:url(/tool/box/raw/images/steer_handon.png);
+}
+#steer_handon:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_handon_on.png);
+}
+#steer_handon:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_handon.png);
+}
+
+#steer_handup {
+    -fx-graphic:url(/tool/box/raw/images/steer_handup.png);
+}
+#steer_handup:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_handup_on.png);
+}
+#steer_handup:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_handup.png);
+}
+
+#steer_navi {
+    -fx-graphic:url(/tool/box/raw/images/steer_navi.png);
+}
+#steer_navi:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_navi_on.png);
+}
+#steer_navi:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_navi.png);
+}
+
+#steer_OFF {
+    -fx-graphic:url(/tool/box/raw/images/steer_OFF.png);
+}
+#steer_OFF:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_OFF_on.png);
+}
+#steer_OFF:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_OFF.png);
+}
+
+#steer_RES {
+    -fx-graphic:url(/tool/box/raw/images/steer_RES.png);
+}
+#steer_RES:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_RES_on.png);
+}
+#steer_RES:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_RES.png);
+}
+
+#steer_add {
+    -fx-graphic:url(/tool/box/raw/images/steer_add.png);
+}
+#steer_add:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_add_on.png);
+}
+#steer_add:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_add.png);
+}
+
+#steer_reduce {
+    -fx-graphic:url(/tool/box/raw/images/steer_reduce.png);
+}
+#steer_reduce:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_reduce_on.png);
+}
+#steer_reduce:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_reduce.png);
+}
+
+#steer_LIM {
+    -fx-graphic:url(/tool/box/raw/images/steer_LIM.png);
+}
+#steer_LIM:hover {
+    -fx-graphic:url(/tool/box/raw/images/steer_LIM_on.png);
+}
+#steer_LIM:pressed {
+    -fx-graphic:url(/tool/box/raw/images/steer_LIM.png);
+}
+
+
+#downSMSClient {
+    -fx-underline:true;
+    -fx-graphic: url("/tool/box/raw/images/_16_download.png"); 
+    -fx-content-display:right;
+    -fx-cursor:hand;    
+}
+#tfCode {
+    -fx-font-size: 14px;
+}
+
+
+.combo-box-base {
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Segoe UI Semibold";    
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#61a2b1, #285171);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 10pt;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-weight: bold; 
+    -fx-pref-width: 150;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#285171, #61a2b1);
+    -fx-cursor:hand;
+}
+.button:pressed {
+    -fx-background-color:#285171;
+}

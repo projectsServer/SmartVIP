@@ -1,0 +1,22 @@
+#tip {
+    -fx-graphic:url("/tool/box/raw/images/_16_log.png");
+}
+
+#clear {
+    -fx-font-size: 12; 
+    -fx-text-fill: #800000; 
+    -fx-cursor:hand;
+}
+
+#save {
+    -fx-graphic:url("/tool/box/raw/images/_16_save.png"); 
+    -fx-cursor:hand;
+}
+
+#logArea {
+    -fx-font-size: 12;
+    -font-family: "Segoe UI Semibold";
+    -fx-font-weight: normal;
+    -fx-background-color: #fbfbfb;
+}
+

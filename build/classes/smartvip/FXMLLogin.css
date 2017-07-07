@@ -1,0 +1,78 @@
+root { 
+    display: block;
+}
+
+.root {
+     -fx-background-image: url("/tool/box/raw/images/background.png");
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+ 
+.button {
+    -fx-background-color: linear-gradient(#61a2b1, #285171);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-weight: bold;    
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#285171, #61a2b1);
+    -fx-cursor:hand;
+}
+.button:pressed {
+    -fx-background-color:#285171;
+}
+
+.radio-button {
+    -fx-cursor:hand;
+}
+#tip {
+    -fx-font-size: 9pt; 
+    -fx-text-fill: #285171;
+}
+#option {
+    -fx-graphic: url("/tool/box/raw/images/option.png"); 
+    -fx-cursor:hand;
+}
+#contextMenu4option {
+    -fx-background-image: url("/tool/box/raw/images/background.png");
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-padding: 10 10 10 10;
+}
+#newUser > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_user.png"); 
+    -fx-padding: 3 5 3 5;
+}
+#changePW > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_lock.png"); 
+    -fx-padding: 3 5 3 5;
+}
+#systemSetting > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_cloud.png"); 
+    -fx-padding: 3 5 3 5;
+}
+#systemReset > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_clock_1.png"); 
+    -fx-padding: 3 5 3 5;
+}
+#declear > .label {
+    -fx-graphic: url("/tool/box/raw/images/_16_message.png"); 
+    -fx-padding: 3 5 3 5;
+}
+
+#authority {
+    -fx-fill: #818181;
+}
+
+#mes4passCheck {
+    -fx-font-size: 13pt; 
+    -fx-text-fill: #285171;    
+    -fx-fill: #818181;
+    -fx-padding: 10 100 10 100;
+}

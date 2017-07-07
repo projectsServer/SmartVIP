@@ -1,0 +1,19 @@
+#clear {
+    /*-fx-graphic:url("/tool/box/raw/images/_16_clear_1.png");*/ 
+    -fx-font-size: 12; 
+    -fx-text-fill: #800000; 
+    -fx-cursor:hand;
+}
+
+#save {
+    -fx-graphic:url("/tool/box/raw/images/_16_save.png"); 
+    -fx-font-size: 12; 
+    -fx-cursor:hand;
+}
+
+#logArea {
+    -fx-font-size: 12;
+    -font-family: "Segoe UI Semibold";
+    -fx-font-weight: normal;
+    -fx-background-color: #fbfbfb;
+}

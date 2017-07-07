@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-padding:0 0 0 0; -fx-font-family: 'Segoe UI Semibold' " prefHeight="0" prefWidth="0" fx:controller="smartvip.mainStage.HostController">
+    <top> <fx:include fx:id="menuBar" source="top/MenuBar.fxml" /> </top>
+    
+    <center>
+        <SplitPane orientation="HORIZONTAL" >
+            <items>
+                <SplitPane dividerPositions="1"  orientation="VERTICAL" minWidth="360" prefWidth="360" maxWidth="700" > 
+                    <items>
+                        <TabPane  fx:id="tabControlPane" minHeight="50" >
+                            <fx:include fx:id="tabMaker" source="center/leftTopControl/maker/TabMaker.fxml" /> 
+                            <fx:include fx:id="tabFAE" source="center/leftTopControl/fae/TabFAE.fxml" /> 
+                            <fx:include fx:id="tabRD" source="center/leftTopControl/rd/TabRD.fxml" />
+                            <fx:include fx:id="tabShow" source="center/leftTopControl/show/TabShow.fxml" />
+                        </TabPane>
+                        <fx:include fx:id="sysLog" source="center/leftBottomLog/SysLog.fxml" />
+                    </items>
+                </SplitPane>
+                
+                <TabPane fx:id="tabShowPane" style="-fx-font-size: 12; " tabMinWidth="100"  >
+                    <fx:include fx:id="tabMakerShow" source="center/rightShow/maker/TabMakerShow.fxml" /> 
+                    <fx:include fx:id="tabFAEShow" source="center/rightShow/fae/TabFAEShow.fxml" /> 
+                    <fx:include fx:id="tabRDShow" source="center/rightShow/rd/TabRDShow.fxml" /> 
+                    <fx:include fx:id="tabShowShow" source="center/rightShow/show/TabShowShow.fxml" />     
+                </TabPane>                
+            </items>    
+        </SplitPane>
+    </center>
+    
+    <bottom> <fx:include fx:id="statusBar" source="bottom/StatusBar.fxml" /> </bottom>
+
+</BorderPane>
+
+

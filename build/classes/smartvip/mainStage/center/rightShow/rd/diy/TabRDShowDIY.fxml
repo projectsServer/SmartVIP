@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Tab fx:id="tabRDShowDIY" text="%TabRDDIY" closable="false" fx:controller="smartvip.mainStage.center.rightShow.rd.TabRDShowController"  xmlns:fx="http://javafx.com/fxml/1">
+<!--    <stylesheets> <URL value="@/tool/box/raw/css/statusBar.css" /> </stylesheets> -->
+    <TabPane  fx:id="tabRDShowPane" >
+<!--        <fx:include fx:id="tabRDShowOnoff" source="center/left_top_control/maker/TabMaker.fxml" /> 
+        <fx:include fx:id="tabRDShowAnalog" source="center/left_top_control/fae/TabFAE.fxml" /> 
+        <fx:include fx:id="tabRDShowPulse" source="center/left_top_control/rd/TabRD.fxml" />
+        <fx:include fx:id="tabRDShowSteer" source="center/left_top_control/show/TabShow.fxml" />
+        <fx:include fx:id="tabRDShowDIY" source="center/left_top_control/show/TabShow.fxml" />
+        <fx:include fx:id="tabRDShowScript" source="center/left_top_control/show/TabShow.fxml" />-->
+    </TabPane>    
+    
+</Tab> 
+ 

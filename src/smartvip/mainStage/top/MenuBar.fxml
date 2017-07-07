@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<MenuBar fx:id="menuBar" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="smartvip.mainStage.top.MenuBarController">
+    <stylesheets> <URL value="@/smartvip/mainStage/top/MenuBar.css" /> </stylesheets>
+    
+    <Menu fx:id="sysFun" text=" 系统功能" >
+        <MenuItem fx:id="printShowFun" text=" 打印预览"   />
+        <MenuItem fx:id="printFun" text=" 打印" />  
+        <SeparatorMenuItem />
+        <MenuItem fx:id="exitFun" text=" 安全退出" onAction="#onMenuItemClicked" />   
+    </Menu>
+    <Menu fx:id="setFun" text=" 功能设置" >
+        <MenuItem fx:id="closeSerial" text=" 关闭串口" onAction="#onMenuItemClicked" />
+        <MenuItem fx:id="openSerial" text=" 打开串口" onAction="#onMenuItemClicked" />
+        <MenuItem fx:id="setSerial" text=" 设置串口" onAction="#onMenuItemClicked" />
+        <SeparatorMenuItem />        
+        <MenuItem fx:id="setAddFun" text=" 服务器地址" onAction="#onMenuItemClicked" />
+        <SeparatorMenuItem />
+        <MenuItem fx:id="pwdFun" text=" 修改密码"  onAction="#onMenuItemClicked" />  
+    </Menu>
+    <Menu fx:id="viewFun" text=" 视图显示" >
+        <CheckMenuItem fx:id="sysLogFun" text=" 运行日志" selected="true" onAction="#onCheckMenuItemClicked" />
+        <SeparatorMenuItem />
+<!--        <CheckMenuItem fx:id="logFun" text=" 信息提示" onAction="#onCheckMenuItemClicked" />  -->
+    </Menu>            
+    <Menu fx:id="statisticFun" text=" 统计功能" >
+        <MenuItem fx:id="doingStatFun" text=" 进行中项目"  />
+        <SeparatorMenuItem />
+        <MenuItem fx:id="doneStatFun" text=" 已完结项目"  />  
+    </Menu>
+    <Menu fx:id="dataFun" text=" 数据管理" >
+        <MenuItem fx:id="newDataFun" text=" 创建新项目" />
+        <SeparatorMenuItem />
+        <MenuItem fx:id="uplaodFun" text=" 文件提交/更新"  />  
+    </Menu> 
+    <Menu fx:id="helpFun" text=" 帮助" >
+        <MenuItem fx:id="noteFun" text=" 操作手册"  onAction="#onMenuItemClicked"  />
+        <MenuItem fx:id="feedbackFun" text=" 问题反馈" />
+        <SeparatorMenuItem />
+        <MenuItem fx:id="aboutFun" text=" 关于SmartVIP"  />  
+    </Menu>
+ </MenuBar>
+ 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="statusBar"  fx:controller="smartvip.mainStage.bottom.StatusBarController"  xmlns:fx="http://javafx.com/fxml/1">
+   
+    <stylesheets> <URL value="@/tool/box/raw/css/statusBar.css" /> </stylesheets>
+    
+    <left> <Label fx:id = "leftTip"/> </left>
+
+    <center> <Label text="%CopyRight"/> </center>
+
+    <right> <Label text="%Version"/> </right>
+    
+</BorderPane> 
+ 

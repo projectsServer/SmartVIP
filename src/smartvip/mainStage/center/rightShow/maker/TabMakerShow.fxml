@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<Tab fx:id="tabMakerShow" text="%TabMaker" closable="false" fx:controller="smartvip.mainStage.center.rightShow.maker.TabMakerShowController"  xmlns:fx="http://javafx.com/fxml/1">
+    <!--    <stylesheets> <URL value="@/tool/box/raw/css/statusBar.css" /> </stylesheets>  -->
+    <content> 
+        <TableView fx:id="tableView" >
+            <columns >
+                <TableColumn text="序号" prefWidth="40" ><cellValueFactory><PropertyValueFactory property="no"/></cellValueFactory></TableColumn>
+                <TableColumn text="10位ID" prefWidth="100" ><cellValueFactory><PropertyValueFactory property="id"/></cellValueFactory></TableColumn>
+                <TableColumn text="11位SIM" prefWidth="100"><cellValueFactory><PropertyValueFactory property="sim"/></cellValueFactory></TableColumn>                
+                <TableColumn text="19位ICCID" prefWidth="150"><cellValueFactory><PropertyValueFactory property="iccid"/></cellValueFactory></TableColumn>
+                <TableColumn text="16位KEY" prefWidth="150"><cellValueFactory><PropertyValueFactory property="key"/></cellValueFactory></TableColumn>
+                <TableColumn text="16位IV" prefWidth="150"><cellValueFactory><PropertyValueFactory property="iv"/></cellValueFactory></TableColumn>
+                <TableColumn text="客户代码" prefWidth="60"><cellValueFactory><PropertyValueFactory property="code"/></cellValueFactory></TableColumn>
+                <TableColumn text="15位IMSI" prefWidth="150"><cellValueFactory><PropertyValueFactory property="imsi"/></cellValueFactory></TableColumn>
+                <TableColumn text="失效时间" prefWidth="180"><cellValueFactory><PropertyValueFactory property="time"/></cellValueFactory></TableColumn>
+                <TableColumn text="操作者" prefWidth="180"><cellValueFactory><PropertyValueFactory property="operator"/></cellValueFactory></TableColumn>
+                <TableColumn text="备注" prefWidth="100"><cellValueFactory><PropertyValueFactory property="memo"/></cellValueFactory></TableColumn>
+            </columns>
+        </TableView>
+    </content>
+</Tab>
