@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/WorkSpace/FxPro/SmartVIP/</file>
             <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/smartvip/mainStage/center/leftTopControl/maker/thread/ThreadRS232.java</file>
             <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/smartvip/mainStage/HostController.java</file>
+            <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/smartvip/FXMLLoginController.java</file>
             <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/smartvip/mainStage/center/leftTopControl/maker/TabMakerController.java</file>
             <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/smartvip/mainStage/center/leftTopControl/maker/thread/ThreadCheck4CG901A.java</file>
             <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/tool/box/rs232/diy/Utils.java</file>
+            <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/tool/box/uis/dialogCircle/TipCircle.java</file>
             <file>file:/F:/WorkSpace/FxPro/SmartVIP/src/smartvip/mainStage/top/MenuBarController.java</file>
         </group>
     </open-files>

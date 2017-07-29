@@ -7,7 +7,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="SmartVIP.jar" size="1350321" download="eager" />
+    <jar href="SmartVIP.jar" size="1350311" download="eager" />
     <jar href="lib\RXTXcomm.jar" size="60984" download="eager" />
     <jar href="lib\commons-codec-1.4.jar" size="58160" download="eager" />
     <jar href="lib\commons-httpclient-3.1.jar" size="305001" download="eager" />

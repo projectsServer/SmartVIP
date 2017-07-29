@@ -882,7 +882,7 @@ public class ThreadRS232 {
                     float ftTemp = 0.0f + (((frame[offset]) << 8) | ((frame[offset+1]) & 0x00FF));
                     ftTemp /= 1000;
                     listExcelRow.set(offset4content, ftTemp + " ℃");                    
-                    if(ftTemp >= 5.8 && ftTemp <= 28.0) {
+                    if(ftTemp >= 3 && ftTemp <= 30) {
                         listExcelRow.set(offset4result, "OK"); // 55 7A 71 00 04 00 03 31 00 1E 76
                     } else {
                         listExcelRow.set(offset4result, "ERROR"); // 55 7A 71 00 04 00 03 31 00 22 4A
@@ -1012,6 +1012,7 @@ public class ThreadRS232 {
                         listExcelRow.set(offset4content, "正常");
                         listExcelRow.set(offset4result, "OK"); 
                     } else {
+                        listExcelRow.set(offset4content, "错误");
                         listExcelRow.set(offset4result, "ERROR");
                         resStatus = "Check_ERROR";
                     }
@@ -1021,12 +1022,13 @@ public class ThreadRS232 {
                         listExcelRow.set(offset4content, "正常");
                         listExcelRow.set(offset4result, "OK"); 
                     } else {
+                        listExcelRow.set(offset4content, "错误");
                         listExcelRow.set(offset4result, "欠压/无电池");
                         resStatus = "Check_ERROR";
                     }                    
                     break;                     
                 default: 
-                    // 0346  0347  0349 034B  034C  0363  0359  0377 0376  0354 0356
+                    // 0345 0346  0347  0349 034B  034C  0363  0359  0377 0376  0354 0356
                     String hexTmp = Integer.toHexString(frame[offset]);
                     listExcelRow.set(offset4content, (hexTmp.length() == 1)? "0x0" + hexTmp: "0x" + hexTmp);
                     if(frame[8] > 0x00) {
